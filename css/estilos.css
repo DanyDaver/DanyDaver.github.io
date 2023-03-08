@@ -1,0 +1,18 @@
+/**
+    define estilo por clase
+*/
+.texto {
+    color: blue;
+}
+/**
+    define estilo por etiqueta html
+*/
+p {
+    font-style: italic; 
+}
+
+.conborde {
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+}
