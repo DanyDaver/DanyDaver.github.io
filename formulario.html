@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/estilos3.css">
 
 <div id="general">    
+
+    <h3>Ingrese sus datos y me comunicaré a la brevedad:</h3>
     <style> 
         form {
   /* Centrar el formulario en la página */
@@ -40,7 +42,7 @@
             textarea {
   /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
      Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
-     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+                font:Verdana, Geneva, Tahoma, sans-serif;
 
   /* Tamaño uniforme del campo de texto */
                 width: 300px;
@@ -61,7 +63,7 @@
             vertical-align: top;
 
   /* Proporcionar espacio para escribir texto */
-            height: 5em;
+            height: 10em;
             }
 
         .button {
@@ -79,14 +81,14 @@
 </head>
 
 <body>
-    <form action="/my-handling-form-page" method="post">
+    <form action="/my-handling-form-page" unsubmmit="" method="post">
         <ul>
             <li>
-              <label for="Nombre y Apellido">Nombre:</label>
+              <label for="Nombre y Apellido">Nombre y Apellido:</label>
               <input type="text" id="nombre-apellido" name="nombre-apellido">
             </li>
             <li>
-              <label for="mail">Correo electrónico:</label>
+              <label for="mail">e-mail:</label>
               <input type="email" id="mail" name="mail">
             </li>
             <li>
