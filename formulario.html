@@ -1,108 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" type="text/css" href="css/estilos3.css">
-
-<div id="general">    
-
-    <h3>Ingrese sus datos y me comunicaré a la brevedad:</h3>
-    <style> 
-        form {
-  /* Centrar el formulario en la página */
-            margin: 0 auto;
-            width: 400px;
-  /* Esquema del formulario */
-            padding: 1em;
-            border: 1px solid #CCC;
-            border-radius: 1em;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        form li + li {
-            margin-top: 1em;
-        }
-
-        label {
-  /* Tamaño y alineación uniforme */
-            display: inline-block;
-            width: 90px;
-            text-align: right;
-        }
-
-        input,
-            textarea {
-  /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
-     Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
-                font:Verdana, Geneva, Tahoma, sans-serif;
-
-  /* Tamaño uniforme del campo de texto */
-                width: 300px;
-                box-sizing: border-box;
-
-  /* Hacer coincidir los bordes del campo del formulario */
-                border: 1px solid #999;
-            }
-
-        input:focus,
-            textarea:focus {
-  /* Destacado adicional para elementos que tienen el cursor */
-                border-color: #000;
-            }
-
-        textarea {
-  /* Alinear los campos de texto multilínea con sus etiquetas */
-            vertical-align: top;
-
-  /* Proporcionar espacio para escribir texto */
-            height: 10em;
-            }
-
-        .button {
-  /* Alinear los botones con los campos de texto */
-            padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
-        }
-
-        button {
-  /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
-     entre las etiquetas y sus campos de texto */
-            margin-left: .5em;
-        }
-    </style>
-<div>    
+    <link rel="stylesheet" type="text/css" href="./css/formulario.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="./js/funciones.js"></script>
 </head>
 
 <body>
-    <form action="/my-handling-form-page" unsubmmit="" method="post">
+    <div id="general" style="height: auto">
+        <div style="text-align: center;">
+        <h1>Daniela Daverio</h1>
+        <h5>Programadora Full Stack</h5>
+        <nav>
+            <a href="index.html" class="nav-enlace">Inicio</a>
+            <a href="datos.html" class="nav-enlace">Datos Personales</a>
+            <a href="experiencia.html" class="nav-enlace">Experiencia Laboral</a>
+            <a href="estudios.html" class="nav-enlace">Estudios Cursados</a>
+        <nav>
+        </div>
+        <h3>Ingrese sus datos y me comunicaré a la brevedad:</h3>
+    <div>
+
+    <form action="/my-handling-form-page" onsubmit="return validarFormulario()" method="post">
         <ul>
             <li>
-              <label for="Nombre y Apellido">Nombre y Apellido:</label>
-              <input type="text" id="nombre-apellido" name="nombre-apellido">
+                <label for="Nombre y Apellido">Nombre y Apellido:</label>
+                <input type="text" id="nombre-apellido" name="nombre-apellido">
             </li>
             <li>
-              <label for="mail">e-mail:</label>
-              <input type="email" id="mail" name="mail">
+                <label for="email">e-mail:</label>
+                <input type="email" id="email" name="email">
             </li>
             <li>
-                <label for="Teléfono">Teléfono:</label>
-                <input type="number" id="teléfono" name="teléfono">
-              </li>
-            <li>
-              <label for="Mensaje">Motivo del Contacto:</label>
-              <textarea id="msg" name="mensaje"></textarea>
+                <label for="telefono">Teléfono:</label>
+                <input type="number" id="telefono" name="telefono">
             </li>
-           </ul>
-           <li class="button">
-            <button type="submit">Envíe su mensaje</button>
-          </li>
+            <li>
+                <label for="Mensaje">Motivo del Contacto:</label>
+                <textarea id="msg" name="mensaje"></textarea>
+            </li>
+            <li style="text-align: center;">
+            <button type="submit" class="boton-enviar">Envíe su mensaje</button>
+            </li>
+        </ul>
     </form>
 </body>
+
 </html>

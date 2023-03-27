@@ -6,17 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datos Personales</title>
     <link rel="stylesheet" type="text/css" href="css/estilos3.css">
-    <!-- <link rel="stylesheet" href="css/navbar.css"> -->
-</head>
+    <link rel="stylesheet" href="css/navbar.css">
+    </head>
 
 <body>
-    <div id="cuerpo">
-        <section>
-            <h3>Datos Personales</h3>
-            <p>Teléfono: 123-456-789</p>
-            <p>mail: daniela_dvr@yahoo.com.ar</p>
-            <p>Dirección: Av. Siempreviva 742, Springfield</p>
-        </section>
+    <div id="general">
+        <div id="titulo" style= "background-color: rgb(216, 136, 108);">
+            <h1>Daniela Daverio</h1>
+                <h5>Programadora Full Stack</h5>
+                <nav>
+                    <a href="index.html" class="nav-enlace">Inicio</a>
+                    <a href="datos.html" class="nav-enlace">Datos Personales</a>
+                    <a href="experiencia.html" class="nav-enlace">Experiencia Laboral</a>
+                    <a href="estudios.html" class="nav-enlace">Estudios Cursados</a>
+                </nav>
+    
+            <section>
+                <h3>Datos Personales</h3>
+                <p>Teléfono: 123-456-789</p>
+                <p>mail: <button id="myEmail" class="nav-enlace"> Ver  Email</button> <span id="email-display" style="display: none;"> daniela_dvr@yahoo.com.ar </span></p>
+                <p>Dirección: Av. Siempreviva 742, Springfield</p>
+            </section>
+        </div>
     </div>
+    <script src="./js/datos.js"></script>
 </body>
 </html>
